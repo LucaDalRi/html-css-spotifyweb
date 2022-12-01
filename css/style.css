@@ -34,6 +34,9 @@ body{
    /* height: calc(100% - 100px);
    da mettere min height poi  */
 }
+.color-g{
+    color: #7d7f84;
+}
 
 
 /* CTA Button */
@@ -157,13 +160,6 @@ body{
 
 
 
-
-
-
-
-
-
-
 /* player */
 .container-player{
     height: 100px;
@@ -172,6 +168,74 @@ body{
     bottom: 0;
     left: 0;
     z-index: 30;
-    background-color: cadetblue;
+    background-color: #282828;
+    color: white;
+    justify-content: space-between;
+    
+
 }
 
+.container-sinistro{
+    height: 100%;
+    align-items: center;
+    
+}
+.icona-titolo{
+    height: 100%;
+    align-items: center;
+}
+
+.img-icona{
+    height: 70px;
+    width: 70px;
+    padding-left: 20px;
+}
+
+.img-icona img{
+    width: 100%;
+}
+.titolo-canzone{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.titolo-canzone :first-child{
+    margin-bottom: 5px;
+}
+
+.like-cartella{
+    margin: 0 10px;
+}
+
+/* player centrale */
+
+.container-centrale{
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+}
+
+.marg10{
+    margin: 0 10px;
+}
+.icone-player{
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.fa-play{
+    margin: 0 30px;
+    padding: 10px 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.container-progress-bar{
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+#progress-line{
+    width: 400px;
+    margin: 0 30px;
+}

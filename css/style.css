@@ -238,15 +238,36 @@ body{
 #progress-line{
     width: 400px;
     margin: 0 30px;
-    
+    background: gray;
+    border-radius: 20px;
+    height: 5px;
+    border: 0px;
+    margin-bottom: 7px;
 }
+
+
 /* volume destro */
 .container-destro{
     justify-content: right;
     align-items: center;
-
+    
 }
 .volume-player progress{
+    background: gray;
+    border-radius: 20px;
+    height: 5px;
+    border: 0px;
     width: 55%;
     margin-left: 10px;
+    margin-top: 5px;
 }
+
+/* si non so cosa sia...
+Ho capito che è una funzione per supportare i 
+vari tipi di browser */
+progress::-moz-progress-bar {
+    background: white;
+}
+progress::-webkit-progress-bar {
+    background: white;
+  }

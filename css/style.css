@@ -5,3 +5,114 @@ body{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* debug */
+.debug{
+    border: 1px dashed fuchsia;
+}
+
+/* Regole Comuni */
+.disp-inblck{
+    display: inline-block;
+}
+.disp-flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: #7d7f84;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* nav laterale */
+
+.container-aside{
+   width: 200px;
+   /* height: calc(100% - 100px);
+   da mettere min height poi  */
+}
+
+
+/* CTA Button */
+.container-cta-upgrade{
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #080b1294;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+.container-cta-upgrade a{
+    color: white; 
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+/* lista superiore */
+.lista-superiore ul{
+    list-style: none;
+    
+    
+}
+
+.lista-superiore{
+    text-align: center;
+}
+
+.lista-superiore li{
+    display: inline-block;
+}
+
+
+
+
+/* main */
+.container-upgrade-e-main{
+    width: calc(100% - 200px);
+    height: calc(100vh - 100px);
+    
+}
+
+.container-main{
+    height: 100%;
+    overflow-y: scroll;
+    padding-left: 20px;
+}
+
+.container-main p{
+    font-size: 1.6em;
+}
+
+/* cards */
+.container-cards{
+    width: 100%;
+    margin: 10px;
+}
+
+.card{
+    width: calc((100% /6 ) - 10px);
+}
+
+.img-card img{
+    width: 100%;
+    
+}
+
+/* player */
+.container-player{
+    height: 100px;
+    width: 100%;  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
+    background-color: cadetblue;
+}
+

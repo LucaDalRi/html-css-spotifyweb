@@ -238,4 +238,15 @@ body{
 #progress-line{
     width: 400px;
     margin: 0 30px;
+    
+}
+/* volume destro */
+.container-destro{
+    justify-content: right;
+    align-items: center;
+
+}
+.volume-player progress{
+    width: 55%;
+    margin-left: 10px;
 }

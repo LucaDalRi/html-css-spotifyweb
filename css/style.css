@@ -47,6 +47,7 @@ body{
     justify-content: right;
     align-items: center;
     
+    
 }
 
 .container-cta-upgrade a{
@@ -55,6 +56,7 @@ body{
     border-radius: 20px;
     padding: 10px 20px;
 }
+
 /* lista superiore */
 .lista-superiore ul{
     list-style: none;
@@ -68,6 +70,7 @@ body{
 
 .lista-superiore li{
     display: inline-block;
+    margin: 0 10px;
 }
 
 
@@ -77,14 +80,23 @@ body{
 .container-upgrade-e-main{
     width: calc(100% - 200px);
     height: calc(100vh - 100px);
+    color: white;
+    background-color: #141922;
+    
+    
     
 }
 
 .container-main{
-    height: 100%;
+    height: calc(100% - 100px);
     overflow-y: scroll;
+    overflow-x: hidden;
     padding-left: 20px;
+    scroll-margin-top: 400px;
+    
 }
+
+
 
 .container-main p{
     font-size: 1.6em;
@@ -94,16 +106,63 @@ body{
 .container-cards{
     width: 100%;
     margin: 10px;
+    text-align: center;
+    justify-content: space-between;
+    
 }
 
 .card{
-    width: calc((100% /6 ) - 10px);
+    width: calc((100% / 6) - 10px);
+    
+}
+
+.img-card{
+    width: 100%;
+    
 }
 
 .img-card img{
     width: 100%;
     
+    object-fit: contain; 
+    
 }
+
+.circle-img{
+    clip-path: circle();
+}
+
+.titolo-card{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.sottotitolo-card{
+    margin-top: 10px;
+}
+
+/* seconda riga  */
+.container-cards2{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.card-fila2{
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* player */
 .container-player{

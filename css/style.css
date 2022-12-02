@@ -6,10 +6,14 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+h3, ul{
+    margin: 0;
+}
+
 /* debug */
-/* .debug{
+.debug{
     border: 1px dashed fuchsia;
-} */
+}
 
 /* Regole Comuni */
 .disp-inblck{
@@ -55,6 +59,10 @@ body{
 }
 .container-playlist{
     height: 100px;
+    align-items: center;
+}
+.fa-square-plus{
+    margin-top: 10px;
 }
 
 .container-icone div{
@@ -74,6 +82,7 @@ body{
    height: calc(100% - 450px);
     
 }
+
 .lista-playlist ul{
     list-style: none;
     padding-left: 10px;
@@ -83,25 +92,25 @@ body{
 .container-utente{
     height: 100px;
     flex-direction: column;
-    justify-content: center;
-    
-    
-    
+    justify-content: center;  
 }
+
 .container-utente img{
     width: 25px;
     background-color: gray;
     clip-path: circle();
 }
+
 .container-utente hr{
     width: 90%;
-    margin: 10px auto;
-    
+    margin: 10px auto;  
 }
 
 .container-utente span{
     padding-left: 10px;
+
 }
+
 
 
 
@@ -130,7 +139,8 @@ body{
 
 /* lista superiore */
 .lista-superiore ul{
-    list-style: none; 
+    list-style: none;
+    margin-top: 20px; 
 }
 .lista-superiore{
     text-align: center;
@@ -249,7 +259,7 @@ body{
 .container-centrale{
     justify-content: center;
     flex-direction: column;
-    width: 600px;
+    
 }
 
 .marg10{
@@ -257,7 +267,6 @@ body{
 }
 .icone-player{
     height: 60px;
-    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -274,7 +283,7 @@ body{
     align-items: center;
 }
 #progress-line{
-    width: 400px;
+    max-width: 400px;
     margin: 0 30px;
     background: gray;
     border-radius: 20px;
@@ -294,7 +303,6 @@ body{
     border-radius: 20px;
     height: 5px;
     border: 0px;
-    width: 55%;
     margin-left: 10px;
     margin-top: 5px;
 }
@@ -304,4 +312,14 @@ Ho capito che è una funzione per supportare i
 vari tipi di browser */
 progress::-moz-progress-bar {
     background: white;
+}
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 1100px) {
+    
 }

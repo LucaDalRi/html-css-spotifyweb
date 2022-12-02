@@ -27,16 +27,74 @@ body{
     overflow: hidden;
 }
 
+.color-g{
+    color: #7d7f84;
+}
+
+
 /* nav laterale */
 
 .container-aside{
    width: 200px;
+   background-color: #000000;
+   color: white;
+   
    /* height: calc(100% - 100px);
    da mettere min height poi  */
 }
-.color-g{
-    color: #7d7f84;
+.container-logo{
+    height: 100px;
+    
 }
+.container-logo img{
+    padding-top: 15px;
+}
+.container-icone{
+    height: 150px;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+.container-icone div{
+    align-items: center;
+    
+}
+.container-icone img{
+    width: 30px;
+    margin-right: 5px;
+}
+.container-icone, .container-playlist{
+    padding-left: 10px;
+}
+.lista-playlist{
+    min-height: 150px;
+    overflow-y: auto;
+}
+.lista-playlist ul{
+    list-style: none;
+    padding: 0;
+    line-height: 30px;
+}
+
+.container-utente{
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.container-utente img{
+    width: 25px;
+    background-color: gray;
+    clip-path: circle();
+}
+.container-utente hr{
+    width: 90%;
+    margin: 15px 0;
+    
+}
+
+
 
 
 /* CTA Button */
@@ -48,98 +106,76 @@ body{
     background-color: #080b1294;
     display: flex;
     justify-content: right;
-    align-items: center;
-    
-    
+    align-items: center;    
 }
-
 .container-cta-upgrade a{
     color: white; 
     border: 3px solid white;
     border-radius: 20px;
     padding: 10px 20px;
+    margin-right: 20px;
+}
+.container-cta-upgrade a:hover{
+    transform: scale(1.1);
 }
 
 /* lista superiore */
 .lista-superiore ul{
-    list-style: none;
-    
-    
+    list-style: none; 
 }
-
 .lista-superiore{
     text-align: center;
 }
-
 .lista-superiore li{
     display: inline-block;
     margin: 0 10px;
 }
-
-
-
+.lista-superiore li a:hover{
+    color: white;
+    
+}
 
 /* main */
 .container-upgrade-e-main{
     width: calc(100% - 200px);
     height: calc(100vh - 100px);
     color: white;
-    background-color: #141922;
-    
-    
-    
+    background-color: #141922;  
 }
-
 .container-main{
     height: calc(100% - 100px);
     overflow-y: scroll;
     overflow-x: hidden;
     padding-left: 20px;
-    scroll-margin-top: 400px;
-    
+    scroll-margin-top: 400px; 
 }
-
-
-
 .container-main p{
     font-size: 1.6em;
 }
-
 /* cards */
 .container-cards{
     width: 100%;
     margin: 10px;
     text-align: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
-
 .card{
-    width: calc((100% / 6) - 10px);
-    
+    width: calc((100% / 6) - 10px);   
 }
-
 .img-card{
-    width: 100%;
-    
+    width: 100%;  
 }
-
 .img-card img{
-    width: 100%;
-    
-    object-fit: contain; 
-    
+    width: 100%;  
+    object-fit: contain;   
 }
-
 .circle-img{
     clip-path: circle();
 }
-
 .titolo-card{
     font-weight: bolder;
     margin-top: 20px;
 }
-
 .sottotitolo-card{
     margin-top: 10px;
 }
@@ -149,16 +185,12 @@ body{
     width: 100%;
     margin: 10px;
     text-align: center;
-    margin-top: 20px;
-    
+    margin-top: 20px;  
 }
 .card-fila2{
     width: calc((100% / 6) - 10px);
     margin-right: 10px;
 }
-
-
-
 
 /* player */
 .container-player{
@@ -171,14 +203,11 @@ body{
     background-color: #282828;
     color: white;
     justify-content: space-between;
-    
-
 }
 
 .container-sinistro{
     height: 100%;
     align-items: center;
-    
 }
 .icona-titolo{
     height: 100%;
@@ -245,7 +274,6 @@ body{
     margin-bottom: 7px;
 }
 
-
 /* volume destro */
 .container-destro{
     justify-content: right;
@@ -268,6 +296,3 @@ vari tipi di browser */
 progress::-moz-progress-bar {
     background: white;
 }
-progress::-webkit-progress-bar {
-    background: white;
-  }

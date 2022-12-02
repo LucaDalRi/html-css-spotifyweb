@@ -7,9 +7,9 @@ body{
 }
 
 /* debug */
-.debug{
+/* .debug{
     border: 1px dashed fuchsia;
-}
+} */
 
 /* Regole Comuni */
 .disp-inblck{
@@ -38,10 +38,9 @@ body{
    width: 200px;
    background-color: #000000;
    color: white;
-   
-   /* height: calc(100% - 100px);
-   da mettere min height poi  */
+   height: calc(100vh - 100px);
 }
+
 .container-logo{
     height: 100px;
     
@@ -52,28 +51,32 @@ body{
 .container-icone{
     height: 150px;
     flex-direction: column;
-    justify-content: space-evenly;
-
-    
+    justify-content: space-evenly; 
 }
+.container-playlist{
+    height: 100px;
+}
+
 .container-icone div{
     align-items: center;
-    
 }
+
 .container-icone img{
     width: 30px;
     margin-right: 5px;
 }
+
 .container-icone, .container-playlist{
     padding-left: 10px;
 }
+
 .lista-playlist{
-    min-height: 150px;
-    overflow-y: auto;
+   height: calc(100% - 450px);
+    
 }
 .lista-playlist ul{
     list-style: none;
-    padding: 0;
+    padding-left: 10px;
     line-height: 30px;
 }
 
@@ -81,6 +84,8 @@ body{
     height: 100px;
     flex-direction: column;
     justify-content: center;
+    
+    
     
 }
 .container-utente img{
@@ -90,8 +95,12 @@ body{
 }
 .container-utente hr{
     width: 90%;
-    margin: 15px 0;
+    margin: 10px auto;
     
+}
+
+.container-utente span{
+    padding-left: 10px;
 }
 
 

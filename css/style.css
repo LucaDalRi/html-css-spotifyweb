@@ -11,17 +11,19 @@ h3, ul{
 }
 
 /* debug */
-.debug{
+/* .debug{
     border: 1px dashed fuchsia;
-}
+} */
 
 /* Regole Comuni */
 .disp-inblck{
     display: inline-block;
 }
+
 .disp-flex{
     display: flex;
 }
+
 a{
     text-decoration: none;
     color: #7d7f84;
@@ -37,7 +39,6 @@ body{
 
 
 /* nav laterale */
-
 .container-aside{
    width: 200px;
    background-color: #000000;
@@ -47,20 +48,23 @@ body{
 
 .container-logo{
     height: 100px;
-    
 }
+
 .container-logo img{
     padding-top: 15px;
 }
+
 .container-icone{
     height: 150px;
     flex-direction: column;
     justify-content: space-evenly; 
 }
+
 .container-playlist{
     height: 100px;
     align-items: center;
 }
+
 .fa-square-plus{
     margin-top: 10px;
 }
@@ -108,12 +112,7 @@ body{
 
 .container-utente span{
     padding-left: 10px;
-
 }
-
-
-
-
 
 /* CTA Button */
 .container-cta-upgrade{
@@ -126,6 +125,7 @@ body{
     justify-content: right;
     align-items: center;    
 }
+
 .container-cta-upgrade a{
     color: white; 
     border: 3px solid white;
@@ -142,16 +142,18 @@ body{
     list-style: none;
     margin-top: 20px; 
 }
+
 .lista-superiore{
     text-align: center;
 }
+
 .lista-superiore li{
     display: inline-block;
     margin: 0 10px;
 }
+
 .lista-superiore li a:hover{
-    color: white;
-    
+    color: white;   
 }
 
 /* main */
@@ -161,6 +163,7 @@ body{
     color: white;
     background-color: #141922;  
 }
+
 .container-main{
     height: calc(100% - 100px);
     overflow-y: scroll;
@@ -168,9 +171,11 @@ body{
     padding-left: 20px;
     scroll-margin-top: 400px; 
 }
+
 .container-main p{
     font-size: 1.6em;
 }
+
 /* cards */
 .container-cards{
     width: 100%;
@@ -178,23 +183,29 @@ body{
     text-align: center;
     justify-content: space-between;   
 }
+
 .card{
+  
     width: calc((100% / 6) - 10px);   
 }
 .img-card{
     width: 100%;  
 }
+
 .img-card img{
     width: 100%;  
     object-fit: contain;   
 }
+
 .circle-img{
     clip-path: circle();
 }
+
 .titolo-card{
     font-weight: bolder;
     margin-top: 20px;
 }
+
 .sottotitolo-card{
     margin-top: 10px;
 }
@@ -242,34 +253,37 @@ body{
 .img-icona img{
     width: 100%;
 }
+
 .titolo-canzone{
     font-size: 14px;
     margin-left: 10px;
 }
+
 .titolo-canzone :first-child{
     margin-bottom: 5px;
 }
+
 
 .like-cartella{
     margin: 0 10px;
 }
 
 /* player centrale */
-
 .container-centrale{
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 .marg10{
     margin: 0 10px;
 }
+
 .icone-player{
     height: 60px;
     justify-content: center;
     align-items: center;
 }
+
 .fa-play{
     margin: 0 30px;
     padding: 10px 12px;
@@ -282,6 +296,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 #progress-line{
     max-width: 400px;
     margin: 0 30px;
@@ -315,11 +330,15 @@ progress::-moz-progress-bar {
 }
 
 
-
-
-
 /* media query */
 
 @media screen and (max-width: 1100px) {
-    
+    .container-cards{
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+    .card{
+        width: calc((100% / 4) - 10px);
+        margin: 0 5px 10px 5px;
+    }
 }

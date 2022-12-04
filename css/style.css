@@ -99,6 +99,10 @@ body{
     justify-content: center;  
 }
 
+.container-utente i{
+    display: inline;
+}
+
 .container-utente img{
     width: 25px;
     background-color: gray;
@@ -112,6 +116,14 @@ body{
 
 .container-utente span{
     padding-left: 10px;
+}
+
+#logo-small{
+    width: 30px;
+    display: none;
+}
+#logo-large{
+
 }
 
 /* CTA Button */
@@ -272,6 +284,7 @@ body{
 .container-centrale{
     justify-content: center;
     flex-direction: column; 
+    width: 30%;
 }
 
 .marg10{
@@ -298,7 +311,6 @@ body{
 }
 
 #progress-line{
-    max-width: 400px;
     margin: 0 30px;
     background: gray;
     border-radius: 20px;
@@ -349,4 +361,53 @@ progress::-moz-progress-bar {
     .card, .card-fila2{
         width: calc((100% / 2) - 20px);
     }
+}
+
+/* media query 600 */
+
+@media screen and (max-width: 600px) {
+    .container-aside{
+        width: 50px; 
+        
+    }
+    #logo-large{
+        display: none;
+    }
+    #logo-small{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .container-logo{
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .container-icone span{
+        display: none;
+    }
+    .container-icone{
+        padding: 0;
+        align-items: center;
+        justify-content: start;
+        height: calc(100% - 165px);
+    }
+    .container-icone img{
+        padding-bottom: 10px;
+    }
+    .container-playlist, .lista-playlist{
+        display: none;
+    }
+    .container-utente span , .container-utente hr{
+        display: none;
+    }
+    .container-upgrade-e-main{
+        width: calc(100% - 50px);
+    }
+    .container-utente{
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+
 }

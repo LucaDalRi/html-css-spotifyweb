@@ -23,7 +23,8 @@
                 <div class="container-aside debug">
 
                     <div class="container-logo debug">
-                        <img src="img/logo.svg" alt="Logo-large">
+                        <img id="logo-large" src="img/logo.svg" alt="Logo-large">
+                        <img id="logo-small" src="img/logo-small.svg" alt="logo-small">
                     </div>
 
                     <div class="container-icone disp-flex debug">
@@ -66,9 +67,16 @@
                     </div>
 
                     <div class="container-utente disp-flex debug">
-                        <span><i class="fa-regular fa-circle-down"></i> Installa App</span>
+                        <span>Installa App</span>
+                        
+                        <span><i class="fa-regular fa-circle-down"></i></span>
+
                         <hr>
-                        <span><img src="img/profile.svg" alt="Profilo">John Doe</span>
+
+                        <span>John Doe</span>
+
+                        <span><img src="img/profile.svg" alt="Profilo"></span>
+                            
                         
                     </div>
 
@@ -266,11 +274,9 @@
                     </div>
 
                     <div class="container-progress-bar disp-flex debug">
-                        <span>
-                            0:45
-                            <progress id="progress-line" value="20" max="100"></progress>
-                            3:30
-                        </span>
+                        <span>0:45</span>
+                        <progress id="progress-line" value="20" max="100"></progress>
+                        <span>3:30</span>
                     </div>
                 
                 </div>

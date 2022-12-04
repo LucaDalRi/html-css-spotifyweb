@@ -330,7 +330,7 @@ progress::-moz-progress-bar {
 }
 
 
-/* media query */
+/* media query 1100 */
 
 @media screen and (max-width: 1100px) {
     .container-cards{
@@ -340,5 +340,13 @@ progress::-moz-progress-bar {
     .card{
         width: calc((100% / 4) - 10px);
         margin: 0 5px 10px 5px;
+    }
+}
+
+/* media query 700 */
+
+@media screen and (max-width: 700px) {
+    .card, .card-fila2{
+        width: calc((100% / 2) - 20px);
     }
 }
